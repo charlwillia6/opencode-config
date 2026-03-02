@@ -1,5 +1,7 @@
 ---
 description: Update translations in cs.json and en.json files and optionally update component usage
+agent: build
+model: ollama/glm-4.7:cloud
 ---
 
 Updates translations in the `cs.json` and `en.json` message files and optionally updates component files to use translation keys with the `t()` function. This command integrates with Figma to extract text when layer references are provided.
