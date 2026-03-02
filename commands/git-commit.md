@@ -6,7 +6,7 @@ model: ollama/glm-4.7:cloud
 
 Creates a git commit using:
 1. Saved commit message from getCommitMessage tool, OR
-2. A newly generated message via commit-drafter agent
+2. A newly generated message using conventional-commit skill
 
 
 ## Staged changes
