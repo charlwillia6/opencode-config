@@ -15,8 +15,8 @@ Creates a git commit using:
 
 ## Steps
 
-1. **Verify staged changes**
-   - If nothing staged → Exit with error: "Nothing staged. Use /git-stage or git add first."
+ 1. **Verify staged changes**
+    - If nothing staged → Exit with error: "Nothing staged. Stage files first."
 
 2. **Get commit message**
    - Call getCommitMessage()
