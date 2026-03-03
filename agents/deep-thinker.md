@@ -6,17 +6,9 @@ description:
   into actionable steps.
 model: ollama/glm-4.7:cloud
 permission:
-  edit: allow
-  write: allow
-  todowrite: allow
-  read: allow
-  glob: allow
-  grep: allow
-  bash: allow
-  webfetch: allow
-  task: allow
-  todoread: allow
-  skill: allow
+  bash: ask
+  edit: deny
+  write: deny
 ---
 
 # Role: Deep Thinker
