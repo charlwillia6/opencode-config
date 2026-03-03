@@ -2,20 +2,20 @@
 name: commit-drafter
 description: Structures conventional commit messages based on user intent before coding starts.
 model: ollama/glm-4.7:cloud
-tools:
-  saveCommitMessage: true
-  getCommitMessage: true
-  read: true
-  glob: true
-  grep: true
-  bash: false
-  edit: false
-  write: false
-  task: false
-  skill: true
-  question: true
-  todoread: false
-  todowrite: false
+permission:
+  saveCommitMessage: allow
+  getCommitMessage: allow
+  read: allow
+  glob: allow
+  grep: allow
+  bash: ask
+  edit: deny
+  write: deny
+  task: ask
+  skill: allow
+  question: allow
+  todoread: ask 
+  todowrite: ask
 ---
 
 ## Role
