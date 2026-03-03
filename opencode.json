@@ -14,6 +14,10 @@
       "url": "http://127.0.0.1:3845/mcp"
     },
   },
+  "permission": {
+    "*": "allow",
+    "bash": "ask"
+  },
   "provider": {
     "ollama": {
       "npm": "@ai-sdk/openai-compatible",
