@@ -3,11 +3,12 @@ name: web-researcher
 description:
   Internet research specialist using Exa AI websearch. Use when gathering current
   information, researching external topics, or finding recent docs/API versions.
-tools:
-  websearch: true
-  webfetch: true
-  question: true
-  read: true
+model: ollama/glm-4.7:cloud
+permission:
+  websearch: allow
+  webfetch: allow
+  question: allow
+  read: allow
 ---
 
 # Role: Web Researcher
@@ -183,4 +184,4 @@ You are a **web research specialist** who finds accurate, current information **
 4. [TotalTypeScript - Interfaces vs Type Aliases](https://totaltypescript.com/interfaces-vs-type-aliases)
 ```
 
-
+  

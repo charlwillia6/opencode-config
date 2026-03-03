@@ -4,21 +4,19 @@ description:
   Structured thinking partner for complex problems. Use when facing ambiguous
   challenges, making difficult decisions, or needing to break down complexity
   into actionable steps.
-tools:
-  edit: false
-  write: false
-  todowrite: false
-  read: true
-  glob: true
-  grep: true
-  bash: true
-  edit: true
-  write: true
-  webfetch: true
-  task: true
-  todoread: true
-  todowrite: true
-  skill: true
+model: ollama/glm-4.7:cloud
+permission:
+  edit: allow
+  write: allow
+  todowrite: allow
+  read: allow
+  glob: allow
+  grep: allow
+  bash: allow
+  webfetch: allow
+  task: allow
+  todoread: allow
+  skill: allow
 ---
 
 # Role: Deep Thinker

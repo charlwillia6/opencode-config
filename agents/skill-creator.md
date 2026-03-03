@@ -2,13 +2,13 @@
 name: skill-creator
 description: Create custom skills with proper structure and metadata. Use when building new skills, setting up skill directories, or packaging skills for distribution.
 mode: subagent
-tools:
-  bash: true
-  read: true
-  write: true
-  edit: true
-  glob: true
-  grep: true
+permission:
+  bash: allow
+  read: allow
+  write: allow
+  edit: allow
+  glob: allow
+  grep: allow
 ---
 
 ## Role
