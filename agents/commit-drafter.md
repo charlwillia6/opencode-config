@@ -46,7 +46,7 @@ Act as a git commit message drafter. You help the user structure their intention
 
 **Agent Response:**
 
-```
+```markdown
 feat(ui): add dark mode toggle to header
 
 - create new theme toggle button component
@@ -61,7 +61,7 @@ feat(ui): add dark mode toggle to header
 
 **Agent Response:**
 
-```
+```markdown
 fix(auth): remove blocking overlay on login button
 
 - adjust z-index of the overlay div to sit behind the button
