@@ -2,28 +2,58 @@
   "$schema": "https://opencode.ai/config.json",
   "plugin": [
     "@franlol/opencode-md-table-formatter@0.0.3",
+    "@mohak34/opencode-notifier@latest"
   ],
-  "default_agent": "commit-drafter",
+  "default_agent": "plan",
   "mcp": {
     "context7": {
       "type": "remote",
       "url": "https://mcp.context7.com/mcp",
       "enabled": true
     },
-    "figma-mcp-dektop": {
+    "figma-mcp-desktop": {
       "type": "remote",
       "url": "http://127.0.0.1:3845/mcp"
-    },
+    }
   },
   "permission": {
     "*": "allow",
     "bash": {
-      "*": "ask",
-      "git *": "allow",
-      "git commit *": "allow",
-      "cat *": "allow",
-      "pnpm *": "allow",
-      "grep *": "allow"
+      "*": "allow",
+      "touch *": "ask",
+      "mkdir *": "ask",
+      "rm *": "ask",
+      "cp *": "ask",
+      "mv *": "ask",
+      "dd *": "ask",
+      "sudo *": "ask",
+      "chmod *": "ask",
+      "chown *": "ask",
+      "curl *": "ask",
+      "wget *": "ask",
+      "npm install *": "ask",
+      "pip install *": "ask",
+      "git push": "ask",
+      "git reset --hard *": "ask",
+      "git clean *": "ask",
+      "reboot": "ask",
+      "shutdown": "ask",
+      "kill *": "ask",
+      "killall *": "ask",
+      "docker *": "ask",
+      "mkfs *": "ask",
+      "fdisk *": "ask",
+      "parted *": "ask",
+      "format *": "ask",
+      "git branch -d *": "ask",
+      "git branch -D *": "ask",
+      "git rebase *": "ask",
+      "npm run publish": "ask",
+      "brew install *": "ask",
+      "brew upgrade *": "ask",
+      "ssh *": "ask",
+      "scp *": "ask",
+      "rsync *": "ask"
     },
     "doom_loop": "ask",
     "external_directory": "ask"
@@ -38,6 +68,9 @@
       "models": {
         "qwen3:8b": {
           "name": "qwen3:8b"
+        },
+        "nemotron-3-super:cloud": {
+          "name": "nemotron-3-super:cloud"
         },
         "hoangquan456/qwen3-nothink:8b": {
           "name": "hoangquan456/qwen3-nothink:8b"
