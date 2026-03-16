@@ -18,3 +18,5 @@ package.json
 *.log
 
 .env
+
+opencode-notifier-state.json
