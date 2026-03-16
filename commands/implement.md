@@ -1,7 +1,7 @@
 ---
 description: Execute implementation
 agent: build
-model: ollama/glm-4.7:cloud
+model: ollama/glm-5:cloud
 ---
 
 Execute implementation.

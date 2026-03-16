@@ -1,7 +1,7 @@
 ---
 description: Create a git commit with user-approved commit message
 agent: commit-drafter 
-model: ollama/glm-4.7:cloud
+model: ollama/glm-5:cloud
 ---
 
 Creates a git commit using:
@@ -15,30 +15,48 @@ Creates a git commit using:
 
 ## Steps
 
- 1. **Verify staged changes**
+1. **Verify staged changes**
     - If nothing staged → Exit with error: "Nothing staged. Stage files first."
 
 2. **Get commit message**
-   - Call getCommitMessage()
-   - If found → Use that message
-    - If empty/null → Use conventional-commit skill to generate message
+    - Call getCommitMessage()
+      - If found → Use that message
+      - If empty/null → Use conventional-commit skill to generate message → save using saveCommitMessage(message)
+     - Display only the commit message (no additional text, no markup)
 
-3. **User approval**
-   - Present message with question tool: Approve / Edit / Cancel
-   - If approved → 
-     - Call saveCommitMessage(approvedMessage)
-     - Commit
-   - If edited → 
-     - Call saveCommitMessage(editedMessage)
-     - Commit
-   - If cancelled → Exit
+3. **Iterate or commit**
+    - If user suggests changes → Update commit message using conventional-commit skill → save with saveCommitMessage(message)
+    - If user approves → Run `git commit -m "{message}"`
 
-4. **Execute commit**
-   - Run `git commit` with the approved message
-   - Display result (hash, message)
 
 ## Error handling
 
 - Not in git repo: Inform and exit
 - Pre-commit hook failure: Show error
 
+## Valid answer examples
+
+### example 1
+```markdown
+chore(tui): configure theme and update bash permissions
+- set TUI theme to catppuccin-latte in opencode.json
+- create tui.json config with system theme
+- add ls, head, tail commands to allowed bash permissions
+- create backup of previous configuration
+```
+
+### example 2
+```markdown
+fix(api): resolve race condition in concurrent requests
+- add mutex lock to shared session state
+- defer unlock to prevent goroutine leaks
+- add integration test for concurrent scenario
+```
+
+### example 3
+```markdown
+refactor(components): extract form validation to shared hook
+- move validation logic from LoginForm and RegisterForm
+- create useFormValidation hook with zod schema support
+- update all form components to use new hook
+```

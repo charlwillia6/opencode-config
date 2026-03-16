@@ -1,7 +1,7 @@
 ---
 name: commit-drafter
 description: Structures conventional commit messages based on user intent before coding starts.
-model: ollama/glm-4.7:cloud
+model: ollama/glm-5:cloud
 permission:
   saveCommitMessage: allow
   getCommitMessage: allow

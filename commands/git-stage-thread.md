@@ -1,7 +1,7 @@
 ---
 description: Stage git changes for files modified in the current conversation thread
 agent: build
-model: ollama/glm-4.7:cloud
+model: ollama/glm-5:cloud
 ---
 
 Stages file modifications identified from the conversation thread for commit using git.
