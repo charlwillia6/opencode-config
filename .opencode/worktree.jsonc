@@ -1,0 +1,11 @@
+{
+  "$schema": "https://registry.kdco.dev/schemas/worktree.json",
+  "sync": {
+    "copyFiles": [".env", ".env.local"],
+    "symlinkDirs": ["node_modules", "pnpm-workspace.yaml"]
+  },
+  "hooks": {
+    "postCreate": ["pnpm install"],
+    "preDelete": ["git status --porcelain"]
+  }
+}

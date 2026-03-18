@@ -1,7 +1,7 @@
 ---
 name: requirements-analyzer
 description: Analyze feature requirements before implementation. Use when starting new features, reviewing specs, or breaking down tasks.
-model: ollama/glm-5:cloud
+model: ollama/omnicoder-9b
 ---
 
 ## Role

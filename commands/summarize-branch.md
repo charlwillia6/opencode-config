@@ -1,7 +1,7 @@
 ---
 description: Generate PR description from branch commits
-agent: talk 
-model: ollama/glm-5:cloud
+agent: commit-drafter
+model: ollama/rnj-1:8b
 ---
 
 Generates a short paragraph description of the current changes based on commit messages.

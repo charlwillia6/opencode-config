@@ -1,7 +1,7 @@
 ---
 description: Create a git commit with user-approved commit message
 agent: commit-drafter 
-model: ollama/glm-5:cloud
+model: ollama/rnj-1:8b
 ---
 
 Creates a git commit using:

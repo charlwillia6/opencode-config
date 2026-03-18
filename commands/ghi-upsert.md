@@ -1,7 +1,7 @@
 ---
 description: Create, update, or comment on GitHub issues using gh CLI
-agent: build
-model: ollama/glm-5:cloud
+agent: web-researcher
+model: ollama/omnicoder-9b
 ---
 
 Upserts a GitHub issue using the `gh` CLI. Creates a new issue if it doesn't exist, or updates/comments on an existing one.

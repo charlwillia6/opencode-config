@@ -62,7 +62,7 @@ Before proposing a skill, confirm:
 2. Identify the most valuable/reusable insight
 3. Draft the skill file
 4. Ask user to confirm before saving
-5. Save to `~/.claude/skills/learned/`
+5. Save to `~/.opencode/skills/learned/`
 
 ## Notes
 

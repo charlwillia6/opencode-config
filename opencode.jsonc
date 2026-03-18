@@ -1,0 +1,103 @@
+{
+  // OpenCode CLI configuration
+  // Documentation: https://opencode.ai/docs/configuration 
+  "$schema": "https://opencode.ai/config.json",
+  "plugin": [
+    "opencode-wakatime",
+    "@tarquinen/opencode-dcp@latest",
+    "@franlol/opencode-md-table-formatter@latest"
+  ],
+  "permission": {
+    "*": "allow",
+    "bash": {
+      "*": "ask",
+      "git *": "allow",
+      "git commit *": "allow",
+      "cat *": "allow",
+      "pnpm *": "allow",
+      "grep *": "allow"
+    },
+    "doom_loop": "ask",
+    "external_directory": "ask"
+  },
+
+  // Uncomment and configure providers as needed:
+  "provider": {
+    "ollama": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Ollama",
+      "options": {
+        "baseURL": "http://localhost:11434/v1"
+      },
+      "models": {
+        "second_constantine/deepseek-coder-v2:16b": {
+          "name": "deepseek-coder-v2:16b"
+        },
+        "gemma3:12b-it-q4_K_M": {
+          "name": "gemma3:12b"
+        },
+        "carstenuhlig/omnicoder-9b:q4_k_m": {
+          "name": "omnicoder:9b"
+        },
+	"freehuntx/qwen3-coder:14b": {
+          "name": "qwen3-coder:14b"
+        },
+        "rnj-1:8b": {
+          "name": "rnj-1:8b"
+	},
+        "minimax-m2.5:cloud": {
+          "name": "minimax-m2.5:cloud"
+        },
+        "glm-5:cloud": {
+          "name": "glm-5:cloud"
+        },
+        "glm-4.7:cloud": {
+          "name": "glm-4.7:cloud"
+        },
+        "qwen3-coder-next:cloud": {
+          "name": "qwen3-coder-next:cloud"
+        },
+        "qwen3.5:cloud": {
+          "name": "qwen3.5:cloud"
+        },
+        "deepseek-v3.2:cloud": {
+          "name": "deepseek-v3.2:cloud"
+        },
+	"kimi-k2.5:cloud": {
+	  "name": "kimi-k2.5:cloud"
+	}
+      }
+    },
+  //   "anthropic": {
+  //     "apiKey": "YOUR_API_KEY"
+  //   },
+  //   "openai": {
+  //     "apiKey": "YOUR_API_KEY"
+  //   },
+    "google": {
+      "options": {
+        "projectId": "my-project-1543422869778"
+      }
+    }
+  },
+
+  // Default model to use:
+  "model": "google/gemini-flash-lite-latest",
+
+  // MCP servers:
+  "mcp": {
+    "context7": {
+      "type": "remote",
+      "url": "https://mcp.context7.com/mcp",
+      "enabled": true
+    },
+  },
+
+  // Custom system prompt (appended to the default):
+  "instructions": [
+    "Always respond concisely."
+  ],
+
+  // Auto-accept file changes without prompting:
+  // "autoshare": false
+}

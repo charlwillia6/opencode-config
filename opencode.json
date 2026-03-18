@@ -1,59 +1,50 @@
 {
   "$schema": "https://opencode.ai/config.json",
   "plugin": [
-    "@franlol/opencode-md-table-formatter@0.0.3",
+    "opencode-wakatime",
+    "@tarquinen/opencode-dcp@latest",
+    "@franlol/opencode-md-table-formatter@latest",
     "@mohak34/opencode-notifier@latest"
   ],
-  "default_agent": "plan",
+  "default_agent": "architect",
   "mcp": {
     "context7": {
       "type": "remote",
       "url": "https://mcp.context7.com/mcp",
       "enabled": true
-    },
-    "figma-mcp-desktop": {
-      "type": "remote",
-      "url": "http://127.0.0.1:3845/mcp"
     }
   },
   "permission": {
     "*": "allow",
     "bash": {
-      "*": "allow",
-      "touch *": "ask",
+      "*": "ask",
+      "git *": "allow",
+      "git commit *": "allow",
+      "git push": "ask",
+      "git reset --hard *": "ask",
+      "git clean *": "ask",
+      "git branch -d *": "ask",
+      "git branch -D *": "ask",
+      "git rebase *": "ask",
+      "cat *": "allow",
+      "pnpm *": "allow",
+      "npm install *": "ask",
+      "npm run *": "allow",
+      "pip install *": "ask",
+      "grep *": "allow",
+      "ls *": "allow",
       "mkdir *": "ask",
       "rm *": "ask",
       "cp *": "ask",
       "mv *": "ask",
-      "dd *": "ask",
+      "touch *": "ask",
       "sudo *": "ask",
       "chmod *": "ask",
       "chown *": "ask",
       "curl *": "ask",
       "wget *": "ask",
-      "npm install *": "ask",
-      "pip install *": "ask",
-      "git push": "ask",
-      "git reset --hard *": "ask",
-      "git clean *": "ask",
-      "reboot": "ask",
-      "shutdown": "ask",
-      "kill *": "ask",
-      "killall *": "ask",
       "docker *": "ask",
-      "mkfs *": "ask",
-      "fdisk *": "ask",
-      "parted *": "ask",
-      "format *": "ask",
-      "git branch -d *": "ask",
-      "git branch -D *": "ask",
-      "git rebase *": "ask",
-      "npm run publish": "ask",
-      "brew install *": "ask",
-      "brew upgrade *": "ask",
-      "ssh *": "ask",
-      "scp *": "ask",
-      "rsync *": "ask"
+      "kill *": "ask"
     },
     "doom_loop": "ask",
     "external_directory": "ask"
@@ -66,14 +57,20 @@
         "baseURL": "http://localhost:11434/v1"
       },
       "models": {
-        "qwen3:8b": {
-          "name": "qwen3:8b"
+        "second_constantine/deepseek-coder-v2:16b": {
+          "name": "deepseek-coder-v2:16b"
         },
-        "nemotron-3-super:cloud": {
-          "name": "nemotron-3-super:cloud"
+        "oscar_while/gemma-3-12b-tools:q4_k_m": {
+          "name": "gemma-3-12b-tools"
         },
-        "hoangquan456/qwen3-nothink:8b": {
-          "name": "hoangquan456/qwen3-nothink:8b"
+        "carstenuhlig/omnicoder-9b:q4_k_m": {
+          "name": "omnicoder:9b"
+        },
+        "freehuntx/qwen3-coder:14b": {
+          "name": "qwen3-coder:14b"
+        },
+        "rnj-1:8b": {
+          "name": "rnj-1:8b"
         },
         "minimax-m2.5:cloud": {
           "name": "minimax-m2.5:cloud"
@@ -90,13 +87,52 @@
         "qwen3.5:cloud": {
           "name": "qwen3.5:cloud"
         },
-        "qwen3.5:2b": {
-          "name": "qwen3.5:2b"
-        },
         "deepseek-v3.2:cloud": {
           "name": "deepseek-v3.2:cloud"
+        },
+        "kimi-k2.5:cloud": {
+          "name": "kimi-k2.5:cloud"
+        }
+      }
+    },
+    "google": {
+      "options": {
+        "projectId": "my-project-1543422869778"
+      }
+    },
+    "opencode": {
+      "models": {
+        "glm-5": {
+          "name": "GLM-5 (OpenCode Go)"
+        },
+        "kimi-k2.5": {
+          "name": "Kimi K2.5 (OpenCode Go)"
+        },
+        "minimax-m2.5": {
+          "name": "MiniMax M2.5 (OpenCode Go)"
+        },
+        "gpt-5.4": {
+          "name": "GPT-5.4 (OpenCode Zen)"
+        }
+      }
+    },
+    "openrouter": {
+      "apiKey": "YOUR_OPENROUTER_API_KEY",
+      "models": {
+        "anthropic/claude-sonnet-4-20250514": {
+          "name": "claude-sonnet-4-6"
+        },
+        "openai/gpt-5.4": {
+          "name": "gpt-5.4"
+        },
+        "openai/gpt-5.4-mini": {
+          "name": "gpt-5.4-mini"
         }
       }
     }
-  }
+  },
+  "model": "google/gemini-flash-lite-latest",
+  "instructions": [
+    "Always respond concisely."
+  ]
 }
