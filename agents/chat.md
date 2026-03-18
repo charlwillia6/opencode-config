@@ -1,6 +1,7 @@
 ---
 name: chat
 mode: primary
+model: ollama/oscar_while/gemma-3-12b-tools:q4_k_m
 description:
   Discussion partner for exploring ideas and topics. Use when you want to chat
   through concepts, brainstorm, or have a focused conversation without code changes.

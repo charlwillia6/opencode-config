@@ -1,7 +1,7 @@
 ---
 name: requirements-analyzer
 description: Analyze feature requirements before implementation. Use when starting new features, reviewing specs, or breaking down tasks.
-model: ollama/omnicoder-9b
+model: ollama/carstenuhlig/omnicoder-9b:q4_k_m
 ---
 
 ## Role

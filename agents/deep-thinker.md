@@ -4,7 +4,7 @@ description:
   Structured thinking partner for complex problems. Use when facing ambiguous
   challenges, making difficult decisions, or needing to break down complexity
   into actionable steps.
-model: opencode/glm-5
+model: opencode/claude-opus-4-6
 permission:
   bash: ask
   edit: deny

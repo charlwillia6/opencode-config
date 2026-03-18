@@ -2,6 +2,7 @@
 name: architect
 description: High-level strategic planning for complex features. Generates execution plans and maintains `.opencode/context/SESSION_CONTEXT.md` for session memory.
 model: opencode/gpt-5.4
+mode: primary
 permission:
   bash: ask
   edit: deny

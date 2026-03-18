@@ -3,7 +3,7 @@ name: web-researcher
 description:
   Internet research specialist using Exa AI websearch. Use when gathering current
   information, researching external topics, or finding recent docs/API versions.
-model: ollama/omnicoder-9b
+model: ollama/carstenuhlig/omnicoder-9b:q4_k_m
 ---
 
 # Role: Web Researcher

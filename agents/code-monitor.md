@@ -1,12 +1,12 @@
 ---
-name: coder-monitor
+name: code-monitor
 description: Autonomous build validator that loops with coder until builds pass. Uses MiniMax 2.5.
 model: opencode/minimax-m2.5
 permission:
   bash: allow
   edit: deny
   write: deny
-doom_loop: allow
+ doom_loop: allow
 ---
 
 ## Role
@@ -104,7 +104,7 @@ Suggested Fix: [What needs to change]
        │ Write Code         │
        ↓                    │
 ┌─────────────┐            │
-│Coder-Monitor│  Loop until │
+│Code-Monitor │  Loop until │
 │(Tier 3)     │  Build Pass │
 └──────┬──────┘            │
        │ Passes             │

@@ -57,9 +57,6 @@
         "baseURL": "http://localhost:11434/v1"
       },
       "models": {
-        "second_constantine/deepseek-coder-v2:16b": {
-          "name": "deepseek-coder-v2:16b"
-        },
         "oscar_while/gemma-3-12b-tools:q4_k_m": {
           "name": "gemma-3-12b-tools"
         },
@@ -103,34 +100,79 @@
     "opencode": {
       "models": {
         "glm-5": {
-          "name": "GLM-5 (OpenCode Go)"
+          "name": "GLM-5"
         },
         "kimi-k2.5": {
-          "name": "Kimi K2.5 (OpenCode Go)"
+          "name": "Kimi K2.5"
         },
         "minimax-m2.5": {
-          "name": "MiniMax M2.5 (OpenCode Go)"
+          "name": "MiniMax M2.5"
+        },
+        "minimax-m2.5-free": {
+          "name": "MiniMax M2.5 Free"
+        },
+        "big-pickle": {
+          "name": "Big Pickle"
+        },
+        "claude-sonnet-4-6": {
+          "name": "Claude Sonnet 4.6"
+        },
+        "claude-opus-4-6": {
+          "name": "Claude Opus 4.6"
         },
         "gpt-5.4": {
-          "name": "GPT-5.4 (OpenCode Zen)"
+          "name": "GPT-5.4"
+        },
+        "gpt-5.4-mini": {
+          "name": "GPT-5.4 Mini"
+        },
+        "gpt-5.4-nano": {
+          "name": "GPT-5.4 Nano"
+        },
+        "gpt-5.3-codex": {
+          "name": "GPT-5.3 Codex"
+        },
+        "gpt-5.3-codex-spark": {
+          "name": "GPT-5.3 Codex Spark"
+        },
+        "mimo-v2-flash-free": {
+          "name": "MiMo V2 Flash Free"
+        },
+        "nemotron-3-super-free": {
+          "name": "Nemotron 3 Super Free"
         }
       }
     },
     "openrouter": {
       "models": {
-        "anthropic/claude-sonnet-4-20250514": {
-          "name": "claude-sonnet-4-6"
+        "anthropic/claude-sonnet-4-6": {
+          "name": "Claude Sonnet 4.6"
+        },
+        "anthropic/claude-opus-4-6": {
+          "name": "Claude Opus 4.6"
         },
         "openai/gpt-5.4": {
-          "name": "gpt-5.4"
+          "name": "GPT-5.4"
         },
         "openai/gpt-5.4-mini": {
-          "name": "gpt-5.4-mini"
+          "name": "GPT-5.4 Mini"
         }
       }
     }
   },
-  "model": "google/gemini-flash-lite-latest",
+  "model": "ollama/gemma-3-12b-tools",
+  "agent": {
+    "plan": {
+      "model": "opencode/glm-5"
+    },
+    "build": {
+      "model": "opencode/minimax-m2.5"
+    }
+  },
+    "build": {
+      "model": "opencode/minimax-m2.5"
+    }
+  },
   "instructions": [
     "Always respond concisely."
   ]
