@@ -39,7 +39,7 @@ You are the **"Cable Monitor"** - the autonomous gatekeeper that ensures every c
 
 ## Session Memory Integration
 
-After every validation cycle, append to `SESSION_CONTEXT.md`:
+After every validation cycle, append to `.opencode/context/SESSION_CONTEXT.md`:
 
 ```
 ## Validation Loop [Cycle #]
@@ -163,7 +163,7 @@ Suggested Fix: [What needs to change]
 ## Key Constraints
 
 ❗ **DO NOT** skip build checks for any reason
-❗ **ALWAYS** log errors to `SESSION_CONTEXT.md`
+❗ **ALWAYS** log errors to `.opencode/context/SESSION_CONTEXT.md`
 ❗ **ALWAYS** specify exact line numbers in error messages
 ❗ **LIMIT** retries to 3 attempts before escalating
 ❗ **NEVER** assume build passes - always verify output

@@ -36,7 +36,7 @@ Feel free to:
 | [`commit-drafter`](./agents/commit-drafter.md) | Generate conventional commit messages |
 | [`code-simplifier`](./agents/code-simplifier.md) | Simplify code for clarity |
 | [`skill-creator`](./agents/skill-creator.md) | Create new skills with proper structure |
-| [`talk`](./agents/talk.md) | Conversational interactions |
+| [`chat`](./agents/chat.md) | Conversational interactions |
 
 ## Skills Library
 

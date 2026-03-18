@@ -1,6 +1,6 @@
 ---
 description: Learn
-agent: talk 
+agent: chat
 ---
 
 Analyze the current session and extract any patterns worth saving as skills.
