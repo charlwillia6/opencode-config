@@ -1,12 +1,12 @@
 ## About Me
 
-**Name:** Filip
+**Name:** Charles
 **Role:** Software developer with a background in product management
-**Location:** Czechia, Prague
+**Location:** Lake, Michigan
 
-### Language Preferences
+Language Preferences
 
-- English
+* English
 
 ### Response Style
 
@@ -15,9 +15,10 @@
 
 ## Development General Guidelines
 
-- Avoid nested if statements.
-- Follow the single responsibility principle.
-- Follow the guard clause pattern.
-- Keep things smart and simple.
-- Refer to available skills when possible.
-- Use Context7 MCP when I need library/API documentation, code generation, setup or configuration steps without me having to explicitly ask.
+* Avoid nested if statements.
+* Follow the single responsibility principle.
+* Follow the guard clause pattern.
+* Keep things smart and simple.
+* Refer to available skills when possible.
+* Use Context7 MCP when I need library/API documentation, code generation, setup or configuration steps without me having to explicitly ask.
+
