@@ -17,7 +17,7 @@ Act as a git commit message drafter. You help the user structure their intention
 ## Process
 
 ### 1. Gather Intent & Context
-- Read `.opencode/context/SESSION_CONTEXT.md` (if it exists) to understand the session context
+- Read `.opencode/context/SESSION_CONTEXT.md` (if it exists) to understand current session state including active feature branch, build status, and pending tasks
 - Parse the user's request to identify the core purpose, scope, and expected outcomes
 - Explore the relevant codebase sections to understand technical context, existing patterns, and conventions
 - Ask clarifying questions using the question tool when intent is ambiguous, incomplete, or spans multiple concerns

@@ -123,26 +123,28 @@ Before implementation begins, write the plan to `.opencode/PLAN.md` in the proje
 
 ## SESSION_CONTEXT.md Protocol
 
-After every major decision or build success, update `.opencode/context/SESSION_CONTEXT.md`:
+After every major decision or build success, update `.opencode/context/SESSION_CONTEXT.md` using the following format:
 
 ```
 ## Last Major Change
-*Date*: [YYYY-MM-DD]
+*Timestamp*: [YYYY-MM-DD HH:MM:SS UTC]
 *Agent*: [architect/coder/validator]
 *Description*: [Summary of changes made]
 
 ## Active Feature Branch
-`git worktree` path: [path if using worktree]
+*Branch*: [current branch name]
+*Worktree Path*: [path if using worktree]
 
 ## Build Status
-✅ Passed / ❌ Failed / ⏳ Pending
+*Status*: ✅ Passed / ❌ Failed / ⏳ Pending
+*Last Check*: [YYYY-MM-DD HH:MM:SS UTC]
 
 ## Pending Tasks
 1. [Next implementation step]
 2. [Documentation updates]
 
 ## Lessons Learned
-[Record any valuable insights for future sessions]
+[Any valuable insights for future sessions]
 ```
 
 ## Planning Template

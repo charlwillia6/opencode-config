@@ -1,7 +1,7 @@
 ---
 name: code-reviewer
 description: Deep quality audit for build-passing code. Detects security, performance, and architectural issues.
-model: opencode/glm-5
+model: opencode-go/glm-5
 permission:
   edit: deny
   write: deny
